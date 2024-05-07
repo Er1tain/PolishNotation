@@ -1,4 +1,5 @@
 namespace PolishNotation;
+using System.Text.Json;
 
 public class LeksemConvertToPN : MathP {
     
@@ -29,7 +30,21 @@ public class LeksemConvertToPN : MathP {
 
     public LeksemConvertToPN() {
 
+        Dictionary<string ,List<string>> SubsetLang = new Dictionary<string, List<string>>(){
+            {"SystemWord", SystemWord},
+            {"Operations", Operations},
+            {"Separators", Separators}
+        };
+        foreach (var (name, list) in SubsetLang)
+            using (FileStream LeksemsJson = new FileStream($"../test_env/Leksems/{name}.json", FileMode.Open)) {
 
+                var leksems_dict = JsonSerializer.Deserialize<Dictionary<int, string>>(LeksemsJson);
+                foreach (var (key, val) in leksems_dict) {
+                    list.Add(val);
+                }
+                // foreach(string leksem in list) Console.Write($"{leksem} ");
+                // Console.WriteLine();
+            }
         
     }
     
