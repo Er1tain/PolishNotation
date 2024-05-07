@@ -30,6 +30,7 @@ public class Program {
             }
         } catch (Exception e) {
             Console.WriteLine("Данный файл не существует!");
-        }
+        } 
+
     }
 }

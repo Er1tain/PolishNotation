@@ -14,5 +14,6 @@ public class LeksemConvertToPN : MathP {
 
     private List<string> StringConsts = [];
     
+    private List<string> Operations = [];
     
 }
