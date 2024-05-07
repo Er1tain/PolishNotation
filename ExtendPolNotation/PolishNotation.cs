@@ -15,5 +15,22 @@ public class LeksemConvertToPN : MathP {
     private List<string> StringConsts = [];
     
     private List<string> Operations = [];
+
+    private class Leksem {
+
+        public int Index;
+        public int text;
+        public Leksem(int Index, int text) {
+            this.Index = Index;
+            this.text = text;
+        }
+
+    }
+
+    public LeksemConvertToPN() {
+
+
+        
+    }
     
 }
