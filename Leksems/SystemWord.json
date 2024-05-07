@@ -1,0 +1,31 @@
+{
+    "0": "using",
+    "1": "namesapce",
+    "2": "System",
+    "3": "class",
+    "4": "Main",
+    "5": "public",
+    "6": "private",
+    "7": "protected",
+    "8": "static",
+    "9": "namespace",
+        "10": "int",
+        "11": "double",
+        "12": "float",
+        "13": "string",
+        "14": "void",
+        "15": "var",
+            "16": "Console",
+            "17": "WriteLine",
+            "18": "ReadLine",
+    "19": "if",
+    "20": "else",
+    "21": "for",
+    "22": "while",
+    "23": "do",
+        "24": "try",
+        "25": "catch",
+        "26": "finally"
+
+
+}
